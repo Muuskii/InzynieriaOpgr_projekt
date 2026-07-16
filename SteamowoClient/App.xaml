@@ -1,0 +1,59 @@
+<Application x:Class="SteamowoClient.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="Views/LoginWindow.xaml">
+    <Application.Resources>
+        <SolidColorBrush x:Key="TloBrush" Color="#1A1A1D"/>
+        <SolidColorBrush x:Key="AkcentBrush" Color="#8A8D91"/>
+        <SolidColorBrush x:Key="PanelBrush" Color="#232326"/>
+        <SolidColorBrush x:Key="PanelJasniejszyBrush" Color="#2E2E32"/>
+        <SolidColorBrush x:Key="TekstBrush" Color="#C7C8CA"/>
+        <SolidColorBrush x:Key="BladBrush" Color="#C97B7B"/>
+        <SolidColorBrush x:Key="SukcesBrush" Color="#9FA3A8"/>
+
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="{StaticResource PanelJasniejszyBrush}"/>
+            <Setter Property="Foreground" Value="{StaticResource TekstBrush}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource AkcentBrush}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Cursor" Value="Hand"/>
+        </Style>
+
+        <Style TargetType="TextBox">
+            <Setter Property="Background" Value="{StaticResource PanelJasniejszyBrush}"/>
+            <Setter Property="Foreground" Value="{StaticResource TekstBrush}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource AkcentBrush}"/>
+            <Setter Property="CaretBrush" Value="{StaticResource TekstBrush}"/>
+        </Style>
+
+        <Style TargetType="PasswordBox">
+            <Setter Property="Background" Value="{StaticResource PanelJasniejszyBrush}"/>
+            <Setter Property="Foreground" Value="{StaticResource TekstBrush}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource AkcentBrush}"/>
+            <Setter Property="CaretBrush" Value="{StaticResource TekstBrush}"/>
+        </Style>
+
+        <Style TargetType="ListView">
+            <Setter Property="Background" Value="{StaticResource PanelBrush}"/>
+            <Setter Property="Foreground" Value="{StaticResource TekstBrush}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource PanelJasniejszyBrush}"/>
+        </Style>
+
+        <Style TargetType="GridViewColumnHeader">
+            <Setter Property="Background" Value="{StaticResource PanelJasniejszyBrush}"/>
+            <Setter Property="Foreground" Value="{StaticResource AkcentBrush}"/>
+            <Setter Property="Padding" Value="8,4"/>
+        </Style>
+
+        <Style TargetType="TabControl">
+            <Setter Property="Background" Value="{StaticResource TloBrush}"/>
+            <Setter Property="BorderThickness" Value="0"/>
+        </Style>
+
+        <Style TargetType="TabItem">
+            <Setter Property="Background" Value="{StaticResource PanelBrush}"/>
+            <Setter Property="Foreground" Value="{StaticResource TekstBrush}"/>
+            <Setter Property="Padding" Value="12,6"/>
+        </Style>
+    </Application.Resources>
+</Application>
