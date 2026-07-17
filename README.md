@@ -7,7 +7,6 @@
 ## Wymagania
 - Visual Studio 2022 (z workloadami: ASP.NET, .NET desktop development)
 - .NET 8 SDK
-- SQL Server Management Studio 22 + działający lokalny SQL Server (np. `localhost\SQLEXPRESS`)
-
+- SQL Server Management Studio 22 + działający lokalny SQL Server
 
 
